@@ -2,7 +2,7 @@
 //  VisionOS_Course_Trail_03App.swift
 //  VisionOS Course Trail 03
 //
-//  Created by 周铁 on 2024/9/2.
+//  Created by ClareZhou on 2024/9/2.
 //
 
 import SwiftUI
@@ -13,9 +13,5 @@ struct VisionOS_Course_Trail_03App: App {
         WindowGroup {
             ContentView()
         }.windowStyle(.volumetric)
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
-        }
     }
 }
