@@ -1,0 +1,105 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "Reality Composer Pro Version 2.0 (448.0.7.508.1)"
+    }
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Container_30x11cm", "Slide_Long_50cm", "Slide_Short_30cm", "M_Jade"]
+    def "Slide_Short_30cm" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (-2.0943952, 3.1415927, 0)
+        }
+        references = @Slide_Short_30cm.usdc@
+    )
+    {
+        rel material:binding = </Root/M_Jade> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (-2.1855694e-8, 3.7855173e-8, 0.49999997, 0.8660254)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (8.5216016e-8, 0.71042436, -0.007968664)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Slide_Long_50cm" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (-0.785398, 3.141591, 0)
+        }
+        references = @Slide_Long_50cm.usdc@
+    )
+    {
+        rel material:binding = </Root/M_Jade> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (6.2042596e-7, -2.5698887e-7, 0.92387956, 0.3826834)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (5.727634e-8, 0.39210677, 0.21859078)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+    }
+
+    def "Container_30x11cm" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        references = @Container_30x11cm.usdc@
+    )
+    {
+        rel material:binding = </Root/M_Jade> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        quatf xformOp:orient = (4.3297803e-17, 4.3297803e-17, 0.70710677, 0.70710677)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        over "Cylinder"
+        {
+            over "M_Container"
+            {
+                over "UsdPreviewSurface"
+                {
+                    color3f inputs:diffuseColor = (0.14117648, 0.2509804, 0.18039216) (
+                        colorSpace = "lin_srgb"
+                    )
+                }
+            }
+
+            over "Cylinder_001" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </Root/M_Jade> (
+                    bindMaterialAs = "weakerThanDescendants"
+                )
+            }
+        }
+    }
+
+    def Material "M_Jade"
+    {
+        token outputs:mtlx:surface
+        token outputs:realitykit:vertex
+        token outputs:surface.connect = </Root/M_Jade/UsdPreviewSurface.outputs:surface>
+
+        def Shader "UsdPreviewSurface"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.14117648, 0.2509804, 0.18039216) (
+                colorSpace = "lin_srgb"
+            )
+            float inputs:opacity = 0.97
+            float inputs:roughness = 0.1
+            token outputs:surface
+        }
+    }
+}
+
