@@ -8,9 +8,16 @@
     upAxis = "Y"
 )
 
-def Xform "Root"
+def Xform "Root" (
+    customData = {
+        float3 rotationEulerHint = (0, -1.5707963, 0)
+    }
+)
 {
     reorder nameChildren = ["Container_30x11cm", "Slide_Long_50cm", "Slide_Short_30cm", "M_Jade"]
+    quatf xformOp:orient = (0.70710677, 0, -0.70710677, 0)
+    uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
     def "Slide_Short_30cm" (
         active = true
         prepend apiSchemas = ["MaterialBindingAPI"]

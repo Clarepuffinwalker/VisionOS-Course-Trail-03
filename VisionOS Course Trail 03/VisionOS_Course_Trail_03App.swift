@@ -12,6 +12,9 @@ struct VisionOS_Course_Trail_03App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }.windowStyle(.volumetric)
+        }
+        .windowStyle(.volumetric)
+        .defaultSize(width: 1.0, height: 2.0, depth: 1.0, in: .meters)
+        .windowResizability(.contentSize)
     }
 }

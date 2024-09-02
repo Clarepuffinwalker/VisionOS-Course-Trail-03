@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB63FC3F2C8604050005F8DA /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = EBDE72132C85C5AE00FAEB0B /* RealityKitContent */; };
 		EBDE72152C85C5AE00FAEB0B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBDE72142C85C5AE00FAEB0B /* RealityKitContent */; };
 		EBDE72172C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE72162C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift */; };
 		EBDE72192C85C5AE00FAEB0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE72182C85C5AE00FAEB0B /* ContentView.swift */; };
@@ -23,6 +24,26 @@
 		EBDE721F2C85C5AF00FAEB0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EBDE72212C85C5AF00FAEB0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		EB63FC5D2C86147E0005F8DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Ball.usda,
+				Bamboo_shield.usdz,
+				Container_30x11cm.usdc,
+				Scene.usda,
+				Slide_Long_50cm.usdc,
+				Slide_Short_30cm.usdc,
+				Slide_Unit.usdc,
+			);
+			target = EBDE720E2C85C5AE00FAEB0B /* VisionOS Course Trail 03 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EB63FC5A2C86143A0005F8DA /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EB63FC5D2C86147E0005F8DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EBDE720C2C85C5AE00FAEB0B /* Frameworks */ = {
@@ -60,6 +81,7 @@
 				EBDE72182C85C5AE00FAEB0B /* ContentView.swift */,
 				EBDE721C2C85C5AF00FAEB0B /* Assets.xcassets */,
 				EBDE72212C85C5AF00FAEB0B /* Info.plist */,
+				EB63FC5A2C86143A0005F8DA /* Models */,
 				EBDE721E2C85C5AF00FAEB0B /* Preview Content */,
 			);
 			path = "VisionOS Course Trail 03";
@@ -142,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB63FC3F2C8604050005F8DA /* RealityKitContent in Resources */,
 				EBDE72202C85C5AF00FAEB0B /* Preview Assets.xcassets in Resources */,
 				EBDE721D2C85C5AF00FAEB0B /* Assets.xcassets in Resources */,
 			);
