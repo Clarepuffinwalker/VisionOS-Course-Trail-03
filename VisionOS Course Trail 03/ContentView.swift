@@ -34,21 +34,25 @@ struct ContentView: View {
                     collisionShape: .generateSphere(radius: 0.04),
                     mass: 0
                 )
-                ball.physicsBody?.massProperties = PhysicsMassProperties(shape: .generateSphere(radius: 0.4), mass: 1.0)
+                ball.physicsBody?.massProperties = PhysicsMassProperties(shape: .generateSphere(radius: 0.4), mass: 0.5)
                 ball.components[PhysicsBodyComponent.self]?.isAffectedByGravity = false
                 ball.physicsBody?.material = PhysicsMaterialResource.generate(staticFriction: 0.5, dynamicFriction: 0.5, restitution: 0.01)
                 ball.position = [0,0.5,0]
                 content.add(ball)
                 self.ball = ball
                 
-                // Scene
+                //Scene,容器的质量增大到不会被带下去
+                //发现一整个 scene 的话，不能自带每个usdc模型的物理和碰撞？而是会自带一个大的？先搭建再解决～
                 guard let scene = try? await ModelEntity(named: "Scene")
                 //guard let scene = try? await ModelEntity(named: "Container_30x11cm")
+                //guard let scene = try? await ModelEntity(named: "Slide_Long_50cm")
+                //guard let scene = try? await ModelEntity(named: "Slide_Short_30cm")
                  else {
                     print("scene not loading")
                     return
                 }
                 scene.position = [0,-0.5,0]
+                //scene.transform.rotation = simd_quatf(angle: .pi / 4, axis: [1, 1, 0])
                 content.add(scene)
                 scene.components[PhysicsBodyComponent.self]?.isAffectedByGravity = false
                 scene.physicsBody?.material = PhysicsMaterialResource.generate(staticFriction: 0.5, dynamicFriction: 0.5, restitution: 0.01)
