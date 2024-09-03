@@ -26,7 +26,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		EB63FC5D2C86147E0005F8DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		EB94D4342C87216B00F0A963 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Ball.usda,
@@ -42,7 +42,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EB63FC5A2C86143A0005F8DA /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EB63FC5D2C86147E0005F8DA /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		EB63FC5A2C86143A0005F8DA /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (EB94D4342C87216B00F0A963 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */

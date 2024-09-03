@@ -14,7 +14,7 @@ struct VisionOS_Course_Trail_03App: App {
             ContentView()
         }
         .windowStyle(.volumetric)
-        .defaultSize(width: 1.0, height: 2.0, depth: 1.0, in: .meters)
+        .defaultSize(width: 2.0, height: 2.0, depth: 1.0, in: .meters)
         .windowResizability(.contentSize)
     }
 }
