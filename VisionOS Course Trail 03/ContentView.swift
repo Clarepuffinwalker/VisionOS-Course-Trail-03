@@ -42,7 +42,8 @@ struct ContentView: View {
                 self.ball = ball
                 
                 //Scene,容器的质量增大到不会被带下去
-                //发现一整个 scene 的话，不能自带每个usdc模型的物理和碰撞？而是会自带一个大的？先搭建再解决～
+                //发现一整个 scene usda 的话，在 rcp 设置过单独部件的碰撞与模拟之后，再倒入 Xcode， 可能不能很好还原每个小部件的碰撞体设置？RCP 里看都ok，一进代码是 …… 自动生成 physics包裹体了吗？逻辑有点迷
+                //先分开搭建
                 guard let scene = try? await ModelEntity(named: "Scene")
                 //guard let scene = try? await ModelEntity(named: "Container_30x11cm")
                 //guard let scene = try? await ModelEntity(named: "Slide_Long_50cm")
