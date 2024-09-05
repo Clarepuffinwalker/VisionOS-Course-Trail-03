@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB36F90C2C877A4F0094554A /* ContentViewArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36F90B2C877A4F0094554A /* ContentViewArchive.swift */; };
 		EB63FC3F2C8604050005F8DA /* RealityKitContent in Resources */ = {isa = PBXBuildFile; fileRef = EBDE72132C85C5AE00FAEB0B /* RealityKitContent */; };
+		EBA0A1862C8A11BC00919C01 /* MultipleBallsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0A1852C8A11BC00919C01 /* MultipleBallsView.swift */; };
+		EBA0A1882C8A11D200919C01 /* SignleBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA0A1872C8A11D200919C01 /* SignleBallView.swift */; };
 		EBDE72152C85C5AE00FAEB0B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = EBDE72142C85C5AE00FAEB0B /* RealityKitContent */; };
 		EBDE72172C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE72162C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift */; };
 		EBDE72192C85C5AE00FAEB0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE72182C85C5AE00FAEB0B /* ContentView.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EB36F90B2C877A4F0094554A /* ContentViewArchive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewArchive.swift; sourceTree = "<group>"; };
+		EBA0A1852C8A11BC00919C01 /* MultipleBallsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleBallsView.swift; sourceTree = "<group>"; };
+		EBA0A1872C8A11D200919C01 /* SignleBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignleBallView.swift; sourceTree = "<group>"; };
 		EBDE720F2C85C5AE00FAEB0B /* VisionOS Course Trail 03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VisionOS Course Trail 03.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBDE72132C85C5AE00FAEB0B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		EBDE72162C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionOS_Course_Trail_03App.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			children = (
 				EBDE72162C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift */,
 				EBDE72182C85C5AE00FAEB0B /* ContentView.swift */,
+				EBA0A1872C8A11D200919C01 /* SignleBallView.swift */,
+				EBA0A1852C8A11BC00919C01 /* MultipleBallsView.swift */,
+				EB36F90B2C877A4F0094554A /* ContentViewArchive.swift */,
 				EBDE721C2C85C5AF00FAEB0B /* Assets.xcassets */,
 				EBDE72212C85C5AF00FAEB0B /* Info.plist */,
 				EB63FC5A2C86143A0005F8DA /* Models */,
@@ -178,7 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBDE72192C85C5AE00FAEB0B /* ContentView.swift in Sources */,
+				EBA0A1862C8A11BC00919C01 /* MultipleBallsView.swift in Sources */,
 				EBDE72172C85C5AE00FAEB0B /* VisionOS_Course_Trail_03App.swift in Sources */,
+				EBA0A1882C8A11D200919C01 /* SignleBallView.swift in Sources */,
+				EB36F90C2C877A4F0094554A /* ContentViewArchive.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
